@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Online Classifieds - Nguyễn Thị Hồng Hạnh</title>
+</head>
+<body style="background-color:rgb(149,211,255)">
+    <h2 align="center" style="color:red">Online Classifieds Search Form</h2>
+    <hr/>
+
+    <form>
+        <p><b>1) Search for a classified in the following sections:</b></p>
+        <table>
+            <tr>
+                <td><input type="radio" name="section" value="employment"> Employment</td>
+                <td><input type="radio" name="section" value="personal"> Personal</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="section" value="forsale"> For Sale</td>
+                <td><input type="radio" name="section" value="misc"> Miscellaneous</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="section" value="housing"> Housing</td>
+                <td><input type="radio" name="section" value="all"> All of the above</td>
+            </tr>
+        </table>
+        <br/>
+
+        <p><b>2) Search the following publications:</b></p>
+        <table>
+            <tr>
+                <td><input type="checkbox" name="pub" value="midwest"> Midwest Times</td>
+                <td><input type="checkbox" name="pub" value="modern"> Modern News</td>
+                <td><input type="checkbox" name="pub" value="emp"> Employment Today</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="pub" value="greatlakes"> Great Lakes Classifieds</td>
+                <td><input type="checkbox" name="pub" value="middletown"> Middletown Daily</td>
+                <td><input type="checkbox" name="pub" value="cashtown"> Cashtown Daily News</td>
+            </tr>
+        </table>
+        <br/>
+
+        <p><b>3) From</b> <input type="text" name="from" placeholder="mm/dd/yy"/>
+        <b>to</b> <input type="text" name="to" placeholder="mm/dd/yy"/></p>
+
+        <p><b>4) Enter a few keywords to describe the classified.</b></p>
+        <input type="text" name="keywords" size="50"/><br/><br/>
+
+        <p><b>5) Click one of the options below:</b></p>
+        <input type="image" src="images/search.gif" alt="Search" onclick="alert('Search simulation'); return false;"/>
+        <input type="image" src="images/help.gif" alt="Help" onclick="alert('Displays help page (Student optional)'); return false;"/>
+        <input type="image" src="images/cancel.gif" alt="Cancel" onclick="this.form.reset(); return false;"/>
+    </form>
+</body>
+</html>
